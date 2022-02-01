@@ -1,7 +1,6 @@
 const mongoose=require("mongoose");
-const validator=require("validator");
 
-mongoose.connect("mongodb://localhost:practise-api")
+mongoose.connect("mongodb://localhost:27017/practise-api")
 .then(()=>{
     console.log("connection successful");
 }).catch((err)=>{
