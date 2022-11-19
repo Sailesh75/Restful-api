@@ -13,7 +13,7 @@ const studentSchema = new mongoose.Schema({
     phone:{
         type:Number,
         required:true,
-        minlength:3
+        minlength:10
     },
     email:{
         type:String,
@@ -26,3 +26,8 @@ const studentSchema = new mongoose.Schema({
         }
         }
 })
+
+const Record= new mongoose.model('Record',studentSchema);
+
+module.exports=Record;
+
